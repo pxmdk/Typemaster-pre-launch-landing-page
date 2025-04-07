@@ -24,6 +24,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 55px 0 84px 0;
 }
 .logo {
   width: 40px;
@@ -39,22 +40,65 @@ body {
   font-weight: 600;
   line-height: 26px;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 /* Row 2: To elementer – hvert skal spænde over 2 kolonner */
-.item2 {
+.cta {
   grid-column: 1 / span 2;
   grid-row: 2;
-  background: #d4edda;
-  padding: 20px;
-  text-align: center;
+  width: 900px;
+  display: flex;
+  align-items: center;
 }
-.item3 {
+.cta-text-container {
+  width: 445px;
+  height: 312px;
+}
+.cta-text-container h1 {
+  font-size: 56px;
+  line-height: 56px;
+  font-weight: 700;
+  color: #162542;
+}
+.cta-text-container p {
+  font-size: 18px;
+  line-height: 26px;
+  color: #7b8bad;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.cta-text-container button {
+  border: none;
+  background-color: #f16718;
+  padding: 16px 27px;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 600;
+  line-height: 26px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.cta-text-container span {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 600;
+  color: #7b8bad;
+  margin-left: 40px;
+  text-transform: uppercase;
+}
+.cta-img {
   grid-column: 3 / span 2;
   grid-row: 2;
-  background: #d4edda;
-  padding: 20px;
-  text-align: center;
+}
+.cta-img img {
+  width: 540px;
+  height: 480px;
+  object-fit: cover;
+  border-radius: 30px;
+  display: flex;
+  justify-content: flex-end;
 }
 
 /* Row 3: Tre elementer. Vi fordeler kolonnerne således, at:
